@@ -27,13 +27,11 @@ public class GitController {
 	      //Adding one week to the current date
 	      LocalDate oneweekBefore = currentDate.plus(-1, ChronoUnit.WEEKS);
 	      System.out.println("oneweekBefore date: "+oneweekBefore);
-		  
 	    return gitService.getGitSearchRepositoriesforLastWeek(oneweekBefore.toString(),currentDate.toString());
 	  }
 	  
 	  @GetMapping(path = "/gitSearchReposbyzerofollowers")
 	  public List<GitSearch> getGitSearchRepobyzerofollowers() {
-		  
 	    return gitService.getGitSearchRepositoriesbyzeroFollowers();
 	  }
 }

@@ -13,7 +13,5 @@ public class GitSearch {
 	private String language;
 	private String description;
 	
-	
-	
 
 }

@@ -12,7 +12,7 @@ public class FunctionalIT {
   Karate testHelloWorld() {
     return Karate.run("helloworld").relativeTo(getClass());
   }
-
+ 
   @Karate.Test
   Karate testCatFacts() {
     return Karate.run("catfacts").relativeTo(getClass());

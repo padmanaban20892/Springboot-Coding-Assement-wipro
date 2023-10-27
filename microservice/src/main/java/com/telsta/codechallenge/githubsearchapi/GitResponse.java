@@ -8,6 +8,4 @@ import lombok.Data;
 @Data
 public class GitResponse {
 	private List<GitSearch> data;
-	
-
 }

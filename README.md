@@ -1,6 +1,6 @@
-# Spring Boot Coding Exercise
+# Spring Boot Coding 
 
-This is a simple coding exercise that will allow you to demonstrate your knowledge
+This is a simple coding  that will allow you to demonstrate your knowledge
 of spring boot by using a microservice to call a downstream service and return
 some results.
 
@@ -20,19 +20,8 @@ Select one of the two exercises below and add the required behaviour to the spri
 
 You will see that there are already a couple of endpoints in the `microservice` they are fundamentally there to demonstrate the use of the [karate](https://github.com/intuit/karate) library and should not be taken as complete examples.
 
-### Assessment
 
-Your submission will be judged on the following criteria.
-
-- The solution works.
-- The solution is maintainable.
-- The solution is tested.
-- The solution is appropriate.
-
-## The Exercises
-
-Example curl api calls for these exercises are listed in the following gist https://gist.github.com/bartonhammond/0a19da4c24c0f644ae38
-
+## Result
 **1. Find the hottest repositories created in the last week**
 
 Use the [GitHub API][1] to expose an endpoint in this microservice that will get a list of the
@@ -48,6 +37,9 @@ The following fields should be returned:
       description
       name
 
+REST API URL:
+https://api.github.com/search/repositories?q=tetris+language:assembly&sort=stars&order=desc
+
 **2. Find the oldest user accounts with zero followers**
 
 Use the [GitHub API][1] to expose an endpoint in this microservice that will find the oldest
@@ -61,4 +53,7 @@ The following fields should be returned:
       login
       html_url
 
-[1]: http://developer.github.com/v3/search/#search-repositories
+REST API URL:
+https://api.github.com/search/users?q=followers:0&sort=joined&order=asc
+
+[1]: https://api.github.com/search/respositories

@@ -76,7 +76,6 @@ public class GitService {
 		uriVariables.put("orderValue", "asc");
 
 		String mainUrl = gitSearchUrl + "/search/users?q={date}&sort={sortValue}&order={orderValue}";
-
 		String gitSearchRespoResult = restTemplate.getForObject(mainUrl, String.class, uriVariables);
 		System.out.println("gitSearchRespoResult ===>" + gitSearchRespoResult.toString());
 		ResponseEntity<String> responseEntity = restTemplate.getForEntity(mainUrl, String.class, uriVariables);
